@@ -5,7 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
-import {PatientInformation} from '../pages/pages';
+import {PatientInformation, ViewphotosPage, LoginPage} from '../pages/pages';
 
 
 @Component({
@@ -14,7 +14,7 @@ import {PatientInformation} from '../pages/pages';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = PatientInformation;
+  rootPage: any = LoginPage;
 
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
