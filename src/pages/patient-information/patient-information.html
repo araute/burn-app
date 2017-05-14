@@ -5,5 +5,70 @@
 </ion-header>
 
 <ion-content>
-    
+
+
+
+   <ion-list>
+    <ion-item>   
+      <button ion-button (click)="getPatientPhotos()">Selected Photos</button>
+    </ion-item>
+
+<ion-item>
+    <ion-label floating>Last Name:</ion-label>  
+      <ion-input type="text"></ion-input>
+</ion-item>
+
+
+    <ion-item>
+     <ion-label floating> First Name:</ion-label>  
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  
+
+
+<ion-item>
+    <ion-label floating>Middle Initial:</ion-label>   
+      <ion-input type="text"></ion-input>
+</ion-item>
+  
+
+
+<ion-item>
+    <ion-label floating>Birth Date:</ion-label>    
+           <ion-input type="text"></ion-input>      
+</ion-item>
+
+       <ion-item>
+       <ion-label  floating>Date of Injury:</ion-label>  
+       <ion-input type="text"></ion-input>      
+      </ion-item>
+  
+   <ion-item>
+    <ion-label>BurnType</ion-label>
+    <ion-select [(ngModel)]="burnType">
+      <ion-option value="burn1">Sample 1</ion-option>
+      <ion-option value="burn2">Sample 2</ion-option>
+      <ion-option value="burn3">Sample 3</ion-option>
+      <ion-option value="burn4">Sample 4</ion-option>
+      <ion-option value="burn5">Sample 5 </ion-option>
+      <ion-option value="burn6">Sample 6</ion-option>
+    </ion-select>
+  </ion-item>
+  
+
+  <ion-item>
+    <ion-label floating>Referring Physician:</ion-label>    
+       <ion-input type="text"></ion-input>      
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Submitted By:</ion-label>    
+       <ion-input type="text"></ion-input>            
+  </ion-item>
+
+  <ion-item>    
+      <button ion-button (click)="submitPatientInformation()">Submit</button>
+  </ion-item>
+
+   </ion-list>
 </ion-content>

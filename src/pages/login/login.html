@@ -13,6 +13,17 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding ng-controller="login">
+  
+<ion-list>
 
+  <ion-item>
+    <ion-input type="text" placeholder="Username"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="password" placeholder="Password"></ion-input>
+  </ion-item>
+<button ion-button (click)="navigateToPatientScreen()">Sign In</button>
+</ion-list>
 </ion-content>
